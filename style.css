@@ -1,0 +1,272 @@
+body {
+    background-color: #23263A;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #F7F7F8;
+}
+
+.contianer-fluid {
+    width: 100%;
+}
+
+.home-desc {
+    letter-spacing: 1.5px;
+    color: lightslategrey;
+}
+
+.dp-image img {
+    width: 300px;
+}
+
+.home-content {
+    margin: auto;
+    height: 100vh;
+}
+
+::selection {
+    color: #23263A;
+    background-color: #55b4ed;
+}
+
+@media (min-width: 992px) {
+    .home-content {
+        padding-top: 100px;
+    }
+
+    nav {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+
+    ul {
+        padding-top: 30px;
+    }
+
+    .home-content {
+        text-align: center;
+    }
+
+    .arrows {
+        margin-top: 100px;
+    }
+}
+
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #55b4ed;
+    background-image: -webkit-linear-gradient(45deg,
+            rgba(255, 255, 255, .2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, .2) 50%,
+            rgba(255, 255, 255, .2) 75%,
+            transparent 75%,
+            transparent)
+}
+
+.arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #55b4ed;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+    {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    /* Safari 和 Chrome */
+}
+
+.about {
+    background-color: #55b4ed;
+    color: #23263A;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+.services {
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #23263A;
+    border-radius: 7px;
+    margin: auto;
+}
+
+.box img {
+    width: 50px;
+    text-align: start;
+    display: flex;
+    margin: 20px 20px;
+}
+
+.box p {
+    text-align: left;
+    margin: 20px 20px;
+}
+
+
+.contact {
+    background-color: #23263A;
+    color: #55b4ed;
+    height: 500px;
+    padding-bottom: 50px;
+    padding: 20px 20px;
+}
+
+.input-form {
+    border-bottom: 1px solid #55b4ed;
+}
+
+
+form {
+    border-radius: 7px;
+
+    @media screen and (min-width: 768px) {
+        padding: 2.5em;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 700px) {
+    .large-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .small-group {
+        width: 45%;
+    }
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    padding: 10px 16px;
+    width: 100%;
+    outline: 0;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    border: 0;
+    background-color: #55b4ed;
+    font-size: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.textarea-div {
+    width: 100%;
+}
+
+textarea {
+    padding: 10px;
+    width: 100%;
+    outline: 0;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #55b4ed;
+    font-size: 14px;
+    height: 100px;
+}
+
+.btn-form {
+    background-color: #55b4ed;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: 0.3s all ease;
+    margin-top: 20px;
+}
